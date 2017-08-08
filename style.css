@@ -1,0 +1,203 @@
+/* Linetech Services */
+
+* { margin: 0; padding: 0; }
+html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
+html, button, input, select, textarea { font-family: inherit; }
+
+body {
+  font-family: "Source Sans Pro", arial, sans;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #121212;
+}
+
+/* Helpers */
+.clear:before, .clear:after { content: " "; display: table; } .clear:after { clear: both; }
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+.sr {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.left { float: left; }
+.right { float: right; }
+.col-1 { width: 480px; }
+.col-2 { width: 280px; }
+
+/* Common */
+a {
+  text-decoration: none;
+  color: #f30;
+}
+a:hover {
+  color: #f00;
+  text-decoration: underline;
+}
+a img { border: none; }
+
+dl {width: 100%;}
+dt {
+  float: left;
+  clear: left;
+  width: 30%;
+}
+dd {
+  float: left;
+  width: 70%;
+}
+
+/* Header */
+.header {
+  position: relative;
+  min-height: 320px;
+}
+.header h1 a,
+.header span a {
+  width: 325px;
+  height: 41px;
+  background: url('images/linetech-services.png') no-repeat;
+  display: block;
+  float: left;
+  margin: 4px 0 0 0;
+}
+.contact-phone {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #fff;
+  display: inline-block;
+  padding-top: 12px;
+  padding-right: 20px;
+}
+
+/* Banner */
+.banner-wrap {
+  padding-top: 20px;
+  background: #ff3e00;
+  background: -moz-linear-gradient(top, #ff3e00 0%, #ff2400 100%);
+  background: -webkit-linear-gradient(top, #ff3e00 0%,#ff2400 100%);
+  background: linear-gradient(to bottom, #ff3e00 0%,#ff2400 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3e00', endColorstr='#ff2400',GradientType=0 );
+}
+.banner {
+  width: 960px;
+  background: #fff;
+  margin: 20px 0;
+}
+.banner {
+  height: 350px;
+  background: url('images/banner.png');
+  margin: 0;
+}
+.banner img { margin: 20px; }
+
+.hero {
+  width: 900px;
+  height: 130px;
+  background: url('images/motto.png');
+  display: block;
+  margin: 20px auto;
+}
+
+/* Content */
+.content-wrap {
+  border-top: 1px solid #fff;
+  background: #d4d4d4;
+  background: -moz-linear-gradient(top, #d4d4d4 0%, #ffffff 20%);
+  background: -webkit-linear-gradient(top, #d4d4d4 0%,#ffffff 20%);
+  background: linear-gradient(to bottom, #d4d4d4 0%,#ffffff 20%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4d4d4', endColorstr='#ffffff',GradientType=0 );
+}
+.content {
+  padding: 40px 20px;
+}
+.content h1,
+.content h2,
+.content h3 {
+  font-weight: normal;
+  color: #f30;
+}
+.content h1 {
+  font-size: 32px;
+  line-height: 38px;
+  margin: 0 0 20px 0;
+}
+.content h2 {
+  font-size: 30px;
+  line-height: 36px;
+  margin: 0 0 20px 0;
+}
+.content p {
+  margin: 0 0 24px 0;
+}
+
+/* Contact Information */
+.contact-info {
+  border-top: 1px dashed #777;
+  border-bottom: 1px dashed #777;
+  padding: 20px 0;
+  margin: 0 0 20px 0;
+  list-style: none;
+}
+.contact-info-label {
+  width: 70px;
+  display: inline-block;
+}
+
+.map {
+  width: 260px;
+  height: 300px;
+  position: relative;
+  display: block;
+}
+.map span {
+  width: 260px;
+  height: 300px;
+  background: #121212;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align:
+  center;
+  line-height: 300px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.map:hover {
+  text-decoration: none;
+}
+.map:hover span {
+  display: block;
+  opacity: 0.8;
+}
+
+/* Footer */
+.footer-wrap {
+  font-size: 13px;
+  line-height: 18px;
+  border-top: 1px solid #121212;
+  margin-top: 20px;
+}
+.footer {
+  padding: 40px 0;
+  border-top: 1px solid #ccc;
+  background: #121212;
+  color: #fff;
+}
+.footer-container {
+  width: 940px;
+  margin: 0 auto;
+  list-style: none;
+}
+.footer p { margin: 0; }
