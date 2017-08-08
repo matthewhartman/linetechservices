@@ -14,9 +14,11 @@ body {
 
 /* Helpers */
 .clear:before, .clear:after { content: " "; display: table; } .clear:after { clear: both; }
-.container {
-  width: 960px;
-  margin: 0 auto;
+@media only screen and (min-width: 980px) {
+  .container {
+    width: 960px;
+    margin: 0 auto;
+  }
 }
 .sr {
   border: 0;
@@ -28,10 +30,34 @@ body {
   position: absolute;
   width: 1px;
 }
-.left { float: left; }
-.right { float: right; }
-.col-1 { width: 480px; }
-.col-2 { width: 280px; }
+
+.col-1 {
+  padding-bottom: 20px;
+}
+.col-2 {
+  border-top: 1px solid #eee;
+  padding-top: 40px;
+}
+@media only screen and (min-width: 740px) {
+  .col-1 {
+    width: 380px;
+    float: left;
+  }
+  .col-2 {
+    width: 280px;
+    float: right;
+    border-top: none;
+    padding-top: 0;
+  }
+}
+@media only screen and (min-width: 980px) {
+  .col-1 {
+    width: 480px;
+  }
+  .col-2 {
+    width: 280px;
+  }
+}
 
 /* Common */
 a {
@@ -44,70 +70,91 @@ a:hover {
 }
 a img { border: none; }
 
-dl {width: 100%;}
-dt {
-  float: left;
-  clear: left;
-  width: 30%;
-}
-dd {
-  float: left;
-  width: 70%;
-}
-
 /* Header */
-.header {
-  position: relative;
-  min-height: 320px;
-}
-.header a {
-  color: #fff;
-}
+.header a { color: #fff; }
 .logo {
   width: 325px;
   height: 41px;
-  background: url('images/linetech-services.png') no-repeat;
+  background: url('images/linetech-services.png') 50% 50% no-repeat;
   display: block;
-  float: left;
-  margin: 4px 0 0 0;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 740px) {
+  .logo {
+    float: left;
+  }
 }
 .contact-phone {
   font-size: 16px;
   line-height: 22px;
   font-weight: 700;
   color: #fff;
-  display: inline-block;
-  padding-top: 12px;
-  padding-right: 20px;
+  text-shadow: 1px 1px 1px #333;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+@media only screen and (min-width: 740px) {
+  .contact-phone {
+    float: right;
+    text-align: left;
+    padding-top: 8px;
+    margin-top: 0;
+  }
 }
 
 /* Banner */
 .banner-wrap {
-  padding-top: 20px;
   background: #ff3e00;
   background: -moz-linear-gradient(top, #ff3e00 0%, #ff2400 100%);
   background: -webkit-linear-gradient(top, #ff3e00 0%,#ff2400 100%);
   background: linear-gradient(to bottom, #ff3e00 0%,#ff2400 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3e00', endColorstr='#ff2400',GradientType=0 );
+  padding: 40px 20px;
 }
-.banner {
-  width: 960px;
-  background: #fff;
-  margin: 20px 0;
+.banner { display: none; }
+@media only screen and (min-width: 740px) {
+  .banner-wrap {
+    padding: 60px 20px;
+  }
+  .banner {
+    background: #fff;
+    padding: 15px;
+    width: 660px;
+    box-shadow: 0 0 40px #333;
+    margin: 0 auto;
+    display: block;
+  }
+  .banner img {
+    display: block;
+    max-width: 100%;
+  }
 }
-.banner {
-  height: 350px;
-  background: url('images/banner.png');
-  margin: 0;
+@media only screen and (min-width: 980px) {
+  .banner-wrap {
+    padding: 30px 0;
+  }
+  .banner {
+    width: 920px;
+  }
 }
-.banner img { margin: 20px; }
 
 .hero {
-  width: 900px;
-  height: 130px;
-  background: url('images/motto.png');
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  text-shadow: 1px 1px 1px #333;
+  color: #fff;
+  font-weight: 400;
   display: block;
-  margin: 20px auto;
+  padding: 40px 20px 10px 20px;
+}
+@media only screen and (min-width: 740px) {
+  .hero {
+    font-size: 38px;
+    line-height: 48px;
+    padding: 70px 20px;
+  }
 }
 
 /* Content */
@@ -144,8 +191,8 @@ dd {
 
 /* Contact Information */
 .contact-info {
-  border-top: 1px dashed #777;
-  border-bottom: 1px dashed #777;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
   padding: 20px 0;
   margin: 0 0 20px 0;
   list-style: none;
@@ -198,9 +245,21 @@ dd {
   color: #fff;
 }
 .footer-container {
-  width: 940px;
+  padding: 0 20px;
   margin: 0 auto;
-  list-style: none;
+}
+@media only screen and (min-width: 740px) {
+  .footer-col-1 {
+    float: left;
+  }
+  .footer-col-2 {
+    float: right;
+  }
+}
+@media only screen and (min-width: 980px) {
+  .footer-container {
+    width: 940px;
+  }
 }
 .footer p { margin: 0; }
 .footer a { color: #fff; }
