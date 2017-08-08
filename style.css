@@ -69,6 +69,14 @@ a:hover {
   text-decoration: underline;
 }
 a img { border: none; }
+hr {
+  padding: 0;
+  border: 0;
+  height: 1px;
+  margin: 40px 0 30px 0;
+  display: block;
+  background: #eee;
+}
 
 /* Header */
 .header a { color: #fff; }
@@ -166,9 +174,7 @@ a img { border: none; }
   background: linear-gradient(to bottom, #d4d4d4 0%,#ffffff 20%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4d4d4', endColorstr='#ffffff',GradientType=0 );
 }
-.content {
-  padding: 40px 20px;
-}
+.content { padding: 40px 20px; }
 .content h1,
 .content h2,
 .content h3 {
@@ -189,6 +195,15 @@ a img { border: none; }
   margin: 0 0 24px 0;
 }
 
+/* Services */
+.services-list {
+  padding: 0 0 0 20px;
+  margin: 0;
+}
+.services-list li {
+  margin: 4px 0;
+}
+
 /* Contact Information */
 .contact-info {
   border-top: 1px solid #eee;
@@ -200,6 +215,10 @@ a img { border: none; }
 .contact-info-label {
   width: 70px;
   display: inline-block;
+  margin: 4px 0;
+}
+.contact-info-value {
+  display: inline-block;
 }
 
 .map {
@@ -208,7 +227,7 @@ a img { border: none; }
   position: relative;
   display: block;
 }
-.map span {
+.map .view-address-label {
   width: 260px;
   height: 300px;
   background: #121212;
@@ -226,9 +245,15 @@ a img { border: none; }
 .map:hover {
   text-decoration: none;
 }
-.map:hover span {
+.map:hover .view-address-label {
   display: block;
   opacity: 0.8;
+}
+.address {
+  font-size: 13px;
+  line-height: 18px;
+  font-style: normal;
+  display: block;
 }
 
 /* Footer */
