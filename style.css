@@ -60,6 +60,9 @@ dd {
   position: relative;
   min-height: 320px;
 }
+.header a {
+  color: #fff;
+}
 .logo {
   width: 325px;
   height: 41px;
@@ -200,3 +203,4 @@ dd {
   list-style: none;
 }
 .footer p { margin: 0; }
+.footer a { color: #fff; }
