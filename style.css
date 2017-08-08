@@ -60,8 +60,7 @@ dd {
   position: relative;
   min-height: 320px;
 }
-.header h1 a,
-.header span a {
+.logo {
   width: 325px;
   height: 41px;
   background: url('images/linetech-services.png') no-repeat;
